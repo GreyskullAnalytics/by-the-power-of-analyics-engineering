@@ -5,9 +5,92 @@ models:
   - name: dim_product
     description: "Table containing product data for WideWorldImporters"
     columns:
+      - name: ProductKey
+        description: "The surrogate key for this table"
+        tests:
+          - not_null
+          - unique
       - name: StockItemID
         description: "The natural key for this table"
         tests:
           - not_null
+      - name: ProductName
+        description: "The name of the product"
+      - name: ProductBrand
+        description: "The brand of the product"
+      - name: ProductColour
+        description: "The colour of the product"
+      - name: SupplierName
+        description: "The supplier of the product"
+      - name: SupplierReference
+        description: "Reference code provided by the supplier"
+      - name: SupplierCategoryName
+        description: "The category that the supplier belongs to"
+  
+  - name: dim_customer
+    description: "Table containing customer data for WideWorldImporters"
+    columns:
+      - name: CustomerKey
+        description: "The surrogate key for this table"
+        tests:
+          - not_null
+          - unique
+      - name: CustomerID
+        description: "The natural key for this table"
+        tests:
+          - not_null
+          - unique   
+      - name: CustomerName
+        description: "The name of the customer"
+      - name: WebsiteURL
+        description: "The customer's website"
+      - name: CustomerCategoryName
+        description: "The category that the customer belongs to"
+      - name: BuyingGroupName
+        description: "The buying group that the customer belongs to"
+  
+  - name: dim_date
+    description: "Date table for slicing data over time"
+    columns:
+      - name: DateKey
+        description: "Surrogate smart key for dates"
+        tests:
+          - not_null
+          - unique   
+      - name: Date
+        description: "The date"
+      - name: Year
+        description: "The calendar year"
+      - name: Quarter
+        description: "The calendar quarter"
+      - name: Month
+        description: "The month name"
+      - name: Day 
+        description: "The day of the month" 
+      - name: MonthNumber
+        description: "The calendar month number"
+      - name: DayOfWeek
+        description: "The day of the week number, starting with Sunday = 1"
+      - name: DayOfWeekName
+        description: "The day of the week name"
+      - name: DayOfYear
+        description: "The day of the calendar year"
+      - name: Week
+        description: "The week number based on week number"
+      - name: ISOWeek 
+        description: "The ISO Week. ISO week's always start on a Monday. Week 1 is the first week that includes Thrsday in the new year"
+  - name: fct_orders
+    description: "Order information at an Order Line granularity"
+    columns: 
+      - name: CustomerKey
+        description: "Foreign Key to the Customer Dimension"
+      - name: ProductKey
+        description: "Foreign Key to the Product Dimension"
+      - name: DateKey
+        description: "Foreign smart key to the Date Dimension"
+      - name: Quantity
+        description: "The number of items on the the order line"    
+      - name: Sales Amount
+        description: "The quantity multiplied by the unit price"
 
   

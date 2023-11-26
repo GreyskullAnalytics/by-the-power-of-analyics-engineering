@@ -1,3 +1,5 @@
+{{ config(tags=["dimension"]) }}
+
 WITH 
 stockItems AS ( SELECT * FROM {{ source('wideworldimporters', 'Warehouse_StockItems')}}),
 
@@ -9,10 +11,11 @@ supplierCategories AS ( SELECT * FROM {{ source('wideworldimporters', 'Purchasin
 
 final AS (
 SELECT 
+    ROW_NUMBER() OVER (ORDER BY si.StockItemID) AS ProductKey,
     si.StockItemID,
-    si.StockItemName,
-    si.Brand,
-    c.ColorName,
+    si.StockItemName AS ProductName,
+    si.Brand AS ProductBrand,
+    c.ColorName AS ProductColour,
     s.SupplierName,
     s.SupplierReference,
     sc.SupplierCategoryName
