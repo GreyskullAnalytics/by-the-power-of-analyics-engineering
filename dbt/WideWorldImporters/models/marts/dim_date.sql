@@ -44,7 +44,7 @@ WHERE
 final AS (
 /* date table query */
 SELECT
-    YEAR(c.Date) * 10000 + MONTH(c.Date) * 100 + DAY(c.Date) AS DateKey,
+    {{ smart_date_key('c.Date') }} AS DateKey,
     c.Date,
     YEAR(c.Date) AS Year,
     CAST(CONCAT('Qtr ', DATEPART(QUARTER, c.Date))  AS VARCHAR) AS Quarter,
