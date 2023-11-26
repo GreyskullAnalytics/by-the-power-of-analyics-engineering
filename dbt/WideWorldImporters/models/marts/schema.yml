@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: dim_product
+    description: "Table containing product data for WideWorldImporters"
+    columns:
+      - name: StockItemID
+        description: "The natural key for this table"
+        tests:
+          - not_null
+
+  

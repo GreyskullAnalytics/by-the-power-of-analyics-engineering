@@ -1,0 +1,14 @@
+sources:
+  - name: wideworldimporters
+    database: de_lh_100_RAW_WideWorldImporters
+    schema: dbo
+    tables:
+      - name: Purchasing_SupplierCategories
+      - name: Purchasing_Suppliers
+      - name: Sales_BuyingGroups
+      - name: Sales_CustomerCategories
+      - name: Sales_Customers
+      - name: Sales_OrderLines
+      - name: Sales_Orders
+      - name: Warehouse_Colors
+      - name: Warehouse_StockItems
