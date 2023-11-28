@@ -1,0 +1,14 @@
+{
+  "name": "Format String Definitions",
+  "lineageTag": "28672bc7-7988-47d7-b4aa-95adfa61edcc",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

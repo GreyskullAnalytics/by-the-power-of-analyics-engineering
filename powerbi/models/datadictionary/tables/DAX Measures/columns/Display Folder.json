@@ -1,0 +1,13 @@
+{
+  "name": "Display Folder",
+  "dataType": "string",
+  "sourceColumn": "DisplayFolder",
+  "lineageTag": "713878b1-4af5-45be-bdf1-f7f0512dadff",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

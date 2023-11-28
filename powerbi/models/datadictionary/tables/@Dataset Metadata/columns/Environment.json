@@ -1,0 +1,7 @@
+{
+  "name": "Environment",
+  "dataType": "string",
+  "description": "The lifecycle development stage for the Dataset",
+  "sourceColumn": "Environment",
+  "lineageTag": "eb5dafb9-9565-443b-b34b-5d396af0c573"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "_fn_GetDMVData",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    Source = (DMVName as text) => let",
+    "    GetDMV = AnalysisServices.Database(_XMLAEndpoint, _DataSet, [Query=\"SELECT * FROM $SYSTEM.\" & DMVName, Implementation=\"2.0\"])",
+    "    in",
+    "        GetDMV",
+    "in",
+    "    Source"
+  ],
+  "lineageTag": "e93ca58a-655f-4992-937d-3332f7ddba3f",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Function"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Slicer_CheckColumns",
+  "expression": "INT( NOT ISEMPTY('Columns'))",
+  "formatString": "#,0",
+  "lineageTag": "d594d011-38b8-483e-a3e0-d3391220d7cd"
+}

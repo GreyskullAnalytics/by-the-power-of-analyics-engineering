@@ -1,0 +1,7 @@
+{
+  "name": "9cc81c92-b715-4bab-ae7c-2c689c83c71b",
+  "fromTable": "DAX Measures",
+  "fromColumn": "TableID",
+  "toTable": "Tables",
+  "toColumn": "ID"
+}

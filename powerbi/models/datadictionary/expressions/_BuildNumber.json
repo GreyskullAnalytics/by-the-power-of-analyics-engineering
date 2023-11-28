@@ -1,0 +1,6 @@
+{
+  "name": "_BuildNumber",
+  "kind": "m",
+  "expression": "\"0\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+  "lineageTag": "be64fb5e-b020-4719-ae21-9a80bdbcd9e9"
+}

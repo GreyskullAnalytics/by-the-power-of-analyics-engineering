@@ -1,0 +1,13 @@
+{
+  "name": "Table Description",
+  "dataType": "string",
+  "sourceColumn": "Description",
+  "lineageTag": "5bece358-322b-4a2d-a4a1-3df923c2f7bd",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

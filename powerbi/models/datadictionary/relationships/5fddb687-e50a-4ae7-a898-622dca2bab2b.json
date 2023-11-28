@@ -1,0 +1,8 @@
+{
+  "name": "5fddb687-e50a-4ae7-a898-622dca2bab2b",
+  "fromTable": "Calculation Items",
+  "fromColumn": "FormatStringDefinitionID",
+  "toTable": "Format String Definitions",
+  "toColumn": "ID",
+  "crossFilteringBehavior": "bothDirections"
+}

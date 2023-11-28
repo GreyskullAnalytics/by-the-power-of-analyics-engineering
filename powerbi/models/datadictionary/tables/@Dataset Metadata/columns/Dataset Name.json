@@ -1,0 +1,7 @@
+{
+  "name": "Dataset Name",
+  "dataType": "string",
+  "description": "The name of the dataset being described in this data dictionary",
+  "sourceColumn": "Dataset Name",
+  "lineageTag": "6507fb4c-1f7a-42a5-bc95-bafbc5f14370"
+}

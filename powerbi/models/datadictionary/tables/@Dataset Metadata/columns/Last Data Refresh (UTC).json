@@ -1,0 +1,8 @@
+{
+  "name": "Last Data Refresh (UTC)",
+  "dataType": "dateTime",
+  "description": "The date and time of the last Dataset refresh in UTC timezone format",
+  "sourceColumn": "Last Data Refresh (UTC)",
+  "formatString": "yyyy-mm-dd hh:nn:ss",
+  "lineageTag": "fada1592-0867-4012-8fe9-3cd5241046ac"
+}

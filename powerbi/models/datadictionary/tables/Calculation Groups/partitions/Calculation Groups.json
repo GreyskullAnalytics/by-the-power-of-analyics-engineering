@@ -1,0 +1,13 @@
+{
+  "name": "Calculation Groups",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = _fn_GetDMVData(\"TMSCHEMA_CALCULATION_GROUPS\")",
+      "in",
+      "    Source"
+    ]
+  }
+}

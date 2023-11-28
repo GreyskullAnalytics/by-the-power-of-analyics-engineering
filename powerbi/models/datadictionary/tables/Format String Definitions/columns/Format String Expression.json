@@ -1,0 +1,13 @@
+{
+  "name": "Format String Expression",
+  "dataType": "string",
+  "sourceColumn": "Expression",
+  "lineageTag": "5d74be19-d3d7-4d34-aec8-dbb06850aac4",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Format String Definitions",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = _fn_GetDMVData(\"TMSCHEMA_FORMAT_STRING_DEFINITIONS\")",
+      "in",
+      "    Source"
+    ]
+  }
+}

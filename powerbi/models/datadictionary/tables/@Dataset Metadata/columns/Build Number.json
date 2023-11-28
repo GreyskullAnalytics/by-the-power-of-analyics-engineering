@@ -1,0 +1,7 @@
+{
+  "name": "Build Number",
+  "dataType": "string",
+  "description": "The Dataset build number from Azure Dev Ops",
+  "sourceColumn": "Build Number",
+  "lineageTag": "a8d79466-e2b5-42a1-a9cf-55f5a9db3fc3"
+}

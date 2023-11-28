@@ -1,0 +1,14 @@
+{
+  "name": "DAX Measures",
+  "lineageTag": "11772b2f-0e4a-4669-8f7d-b1c48b95b90d",
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

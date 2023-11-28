@@ -1,0 +1,14 @@
+{
+  "name": "Columns",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Query1 = _fn_GetDMVData(\"TMSCHEMA_COLUMNS\"),",
+      "    #\"Filtered Rows\" = Table.SelectRows(Query1, each ([IsHidden] = false))",
+      "in",
+      "    #\"Filtered Rows\""
+    ]
+  }
+}

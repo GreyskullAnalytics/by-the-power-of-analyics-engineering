@@ -1,0 +1,11 @@
+{
+  "name": "@Dataset Metadata",
+  "description": "Table holding metadata fields for the Dataset",
+  "lineageTag": "5bc24507-9ce2-4c68-b98c-9b59d5355bbd",
+  "annotations": [
+    {
+      "name": "BestPracticeAnalyzer_IgnoreRules",
+      "value": "{\"RuleIDs\":[\"ENSURE_TABLES_HAVE_RELATIONSHIPS\"]}"
+    }
+  ]
+}

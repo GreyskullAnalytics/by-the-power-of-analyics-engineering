@@ -1,0 +1,19 @@
+{
+  "name": "CalculationGroupID",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "CalculationGroupID",
+  "isAvailableInMdx": false,
+  "lineageTag": "e41f711d-7b6c-497a-8913-30972c1bd478",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

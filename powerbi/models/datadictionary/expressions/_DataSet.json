@@ -1,0 +1,16 @@
+{
+  "name": "_DataSet",
+  "kind": "m",
+  "expression": "\"\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]",
+  "lineageTag": "8852fe3e-9c08-4fc2-8d5b-2fa4402fff7c",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

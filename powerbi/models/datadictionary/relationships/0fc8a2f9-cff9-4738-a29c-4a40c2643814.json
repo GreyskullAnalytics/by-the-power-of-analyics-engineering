@@ -1,0 +1,7 @@
+{
+  "name": "0fc8a2f9-cff9-4738-a29c-4a40c2643814",
+  "fromTable": "Columns",
+  "fromColumn": "TableID",
+  "toTable": "Tables",
+  "toColumn": "ID"
+}

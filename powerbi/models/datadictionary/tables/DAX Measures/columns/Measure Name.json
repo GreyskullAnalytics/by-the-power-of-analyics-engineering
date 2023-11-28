@@ -1,0 +1,13 @@
+{
+  "name": "Measure Name",
+  "dataType": "string",
+  "sourceColumn": "Name",
+  "lineageTag": "bc422e02-8d4a-4147-a645-127e9add318f",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

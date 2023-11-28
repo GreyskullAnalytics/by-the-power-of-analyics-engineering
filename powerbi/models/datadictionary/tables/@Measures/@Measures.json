@@ -1,0 +1,14 @@
+{
+  "name": "@Measures",
+  "lineageTag": "52c274e8-efa3-40ae-a492-e1e292779fa3",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "BestPracticeAnalyzer_IgnoreRules",
+      "value": "{\"RuleIDs\":[\"ENSURE_TABLES_HAVE_RELATIONSHIPS\"]}"
+    }
+  ]
+}

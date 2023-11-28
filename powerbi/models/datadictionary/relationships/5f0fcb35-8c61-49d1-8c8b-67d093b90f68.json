@@ -1,0 +1,7 @@
+{
+  "name": "5f0fcb35-8c61-49d1-8c8b-67d093b90f68",
+  "fromTable": "Calculation Groups",
+  "fromColumn": "TableID",
+  "toTable": "Tables",
+  "toColumn": "ID"
+}

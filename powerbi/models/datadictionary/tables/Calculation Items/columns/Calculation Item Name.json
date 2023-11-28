@@ -1,0 +1,13 @@
+{
+  "name": "Calculation Item Name",
+  "dataType": "string",
+  "sourceColumn": "Name",
+  "lineageTag": "261e2399-b6ab-4356-b1d5-dd4b021357f3",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

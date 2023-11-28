@@ -1,0 +1,16 @@
+{
+  "name": "_XMLAEndpoint",
+  "kind": "m",
+  "expression": "\"\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+  "lineageTag": "945236cc-1a2b-4e40-9df7-b7906359c9c4",
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Text"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

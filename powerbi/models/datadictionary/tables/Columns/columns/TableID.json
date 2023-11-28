@@ -1,0 +1,23 @@
+{
+  "name": "TableID",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "TableID",
+  "isAvailableInMdx": false,
+  "lineageTag": "e8fa541a-fdaf-419b-b0a9-f4c7f87b0604",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"IsHidden\"]"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

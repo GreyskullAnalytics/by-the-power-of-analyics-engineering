@@ -1,0 +1,23 @@
+{
+  "name": "@Dataset Metadata",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      " Refresh = Table.TransformColumnTypes(Table.FromList(List.DateTimes(DateTime.From(DateTimeZone.UtcNow()), 1, #duration(0, 0, 0, 0)), Splitter.SplitByNothing(), {\"Last Data Refresh (UTC)\"}, null, ExtraValues.Error), {{\"Last Data Refresh (UTC)\", type datetime}}),",
+      "#\"Added Environment\" = Table.AddColumn(Refresh, \"Environment\", each _Environment),",
+      "#\"Added BuildNumber\" = Table.AddColumn(#\"Added Environment\", \"Build Number\", each _BuildNumber),",
+      "#\"Added DatasetName\" = Table.AddColumn(#\"Added BuildNumber\", \"Dataset Name\", each _DataSet)",
+      "",
+      " in",
+      "#\"Added DatasetName\""
+    ]
+  },
+  "annotations": [
+    {
+      "name": "BestPracticeAnalyzer_IgnoreRules",
+      "value": "{\"RuleIDs\":[\"MINIMIZE_POWER_QUERY_TRANSFORMATIONS\"]}"
+    }
+  ]
+}

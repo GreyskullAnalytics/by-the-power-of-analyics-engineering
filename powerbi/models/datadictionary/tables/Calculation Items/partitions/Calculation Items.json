@@ -1,0 +1,14 @@
+{
+  "name": "Calculation Items",
+  "mode": "import",
+  "source": {
+    "type": "m",
+    "expression": [
+      "let",
+      "    Source = _fn_GetDMVData(\"TMSCHEMA_CALCULATION_ITEMS\"),",
+      "    ReplaceNullFormats = Table.ReplaceValue(Source,null,-1,Replacer.ReplaceValue,{\"FormatStringDefinitionID\"})",
+      "in",
+      "    ReplaceNullFormats"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Calculation Group Description",
+  "dataType": "string",
+  "sourceColumn": "Description",
+  "lineageTag": "88b67b13-55a0-43bf-bff3-79afdb88f63e",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

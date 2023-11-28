@@ -1,0 +1,13 @@
+{
+  "name": "Format String",
+  "dataType": "string",
+  "sourceColumn": "FormatString",
+  "lineageTag": "8758c453-df5f-4d49-9a5a-ac0b5b7d9adc",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

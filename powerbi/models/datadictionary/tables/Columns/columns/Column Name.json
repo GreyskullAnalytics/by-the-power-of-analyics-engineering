@@ -1,0 +1,17 @@
+{
+  "name": "Column Name",
+  "dataType": "string",
+  "sourceColumn": "ExplicitName",
+  "lineageTag": "1d2c6b75-9bcc-4a75-b207-2e55cfc8d085",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"SortByColumn\"]"
+    }
+  ]
+}

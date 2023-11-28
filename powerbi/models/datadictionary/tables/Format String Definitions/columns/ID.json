@@ -1,0 +1,20 @@
+{
+  "name": "ID",
+  "dataType": "int64",
+  "isHidden": true,
+  "isKey": true,
+  "sourceColumn": "ID",
+  "isAvailableInMdx": false,
+  "lineageTag": "af1a2da9-9776-480b-b1c4-ebd71238c9f6",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "PBI_FormatHint",
+      "value": "{\"isGeneralNumber\":true}"
+    }
+  ]
+}

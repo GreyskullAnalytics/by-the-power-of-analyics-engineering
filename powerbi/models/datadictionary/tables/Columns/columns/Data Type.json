@@ -1,0 +1,14 @@
+{
+  "name": "Data Type",
+  "dataType": "int64",
+  "sourceColumn": "ExplicitDataType",
+  "formatString": "0",
+  "lineageTag": "fe3d5488-d3c8-47a8-8871-1f10d96990e2",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

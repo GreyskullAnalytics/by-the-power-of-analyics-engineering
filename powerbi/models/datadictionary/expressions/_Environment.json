@@ -1,0 +1,6 @@
+{
+  "name": "_Environment",
+  "kind": "m",
+  "expression": "\"Development\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]",
+  "lineageTag": "f59fa6f3-ddbc-44cc-807d-78db657870e6"
+}
