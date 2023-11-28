@@ -1,0 +1,11 @@
+{
+  "name": "DatabaseQuery",
+  "kind": "m",
+  "expression": [
+    "let",
+    "    database = Sql.Database(\"l3xheddaucuetaqesb4o37aj4a-w2rg5wbquvtuhfxxfsppvn2way.datawarehouse.pbidedicated.windows.net\", \"de_wh_200_CUR_WWI\")",
+    "in",
+    "    database"
+  ],
+  "lineageTag": "938285b5-290f-4c31-be99-31820f8d46b7"
+}

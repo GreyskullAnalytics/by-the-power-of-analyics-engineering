@@ -1,0 +1,6 @@
+{
+  "name": "SalesAmount",
+  "dataType": "double",
+  "sourceColumn": "SalesAmount",
+  "lineageTag": "393480c0-0f59-42cc-b611-4a05e5b99584"
+}

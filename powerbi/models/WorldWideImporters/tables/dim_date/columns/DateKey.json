@@ -1,0 +1,6 @@
+{
+  "name": "DateKey",
+  "dataType": "int64",
+  "sourceColumn": "DateKey",
+  "lineageTag": "7e6ecc88-3e77-4150-bedd-59b1f9258011"
+}

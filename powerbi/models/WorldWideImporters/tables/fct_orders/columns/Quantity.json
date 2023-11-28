@@ -1,0 +1,6 @@
+{
+  "name": "Quantity",
+  "dataType": "int64",
+  "sourceColumn": "Quantity",
+  "lineageTag": "e0514ead-dd6b-432b-ba7e-698082afb778"
+}
