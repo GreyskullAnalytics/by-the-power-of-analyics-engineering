@@ -19,7 +19,7 @@ variables:
     value: 'WideWorldImporters'
     # XMLA Endpoint for the workspace (make sure to replace %20 with spaces)                                                   
   - name: PBIWorkspace
-    value: 'powerbi://api.powerbi.com/v1.0/myorg/By the Power of Analytics Engineering' 
+    value: 'powerbi://api.powerbi.com/v1.0/greyskullanalytics.com/By the Power of Analytics Engineering' 
     # Service Connection for using Service Principal     
   - name: ServiceConnection
     value: 'sp-greyskull-uks-001'                                 
