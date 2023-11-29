@@ -1,5 +1,6 @@
 {
   "name": "dim_product",
+  "description": "Table containing product data for WideWorldImporters",
   "lineageTag": "f1ea6dc1-7bec-432a-b8f2-3f3e12380537",
   "annotations": [
     {

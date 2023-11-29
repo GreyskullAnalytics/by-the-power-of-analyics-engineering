@@ -1,6 +1,7 @@
 {
   "name": "DayOfWeekName",
   "dataType": "string",
+  "description": "The day of the week name",
   "sourceColumn": "DayOfWeekName",
   "lineageTag": "1cf44567-a280-41db-9851-d33857d2b04f"
 }

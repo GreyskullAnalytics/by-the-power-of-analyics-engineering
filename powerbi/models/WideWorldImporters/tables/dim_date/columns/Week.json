@@ -1,6 +1,7 @@
 {
   "name": "Week",
   "dataType": "int64",
+  "description": "The week number based on week number function",
   "sourceColumn": "Week",
   "lineageTag": "016eeb9e-a8c3-400a-87e0-bdc90cb5cfc3"
 }

@@ -76,9 +76,9 @@ models:
       - name: DayOfYear
         description: "The day of the calendar year"
       - name: Week
-        description: "The week number based on week number"
+        description: "The week number based on week number function"
       - name: ISOWeek 
-        description: "The ISO Week. ISO week's always start on a Monday. Week 1 is the first week that includes Thrsday in the new year"
+        description: "The ISO Week. ISO week's always start on a Monday. Week 1 is the first week that includes Thursday in the new year"
   - name: fct_orders
     description: "Order information at an Order Line granularity"
     columns: 
