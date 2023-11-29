@@ -24,7 +24,7 @@ steps:
     scriptType: batch
     scriptLocation: inlineScript
     inlineScript: |
-     $(Build.SourcesDirectory)\powerbi\tabulareditor\TabularEditor.exe "$(Build.SourcesDirectory)\powerbi\models\$(PBIDataset)\Database.json" -S SetDeploymentParameters.cs -D "Data Source=$(PBIWorkspace);User ID=app:$(sp-greyskull-uks-001-client-id)@$(sp-greyskull-uks-001-tenant-id);Password=$(sp-greyskull-uks-001-secret);" "$(PBIDataset)" -O -C -P -R -E -V'
+     $(Build.SourcesDirectory)\powerbi\tabulareditor\TabularEditor.exe "$(Build.SourcesDirectory)\powerbi\models\$(PBIDataset)\Database.json" -D "Data Source=$(PBIWorkspace);User ID=app:$(sp-greyskull-uks-001-client-id)@$(sp-greyskull-uks-001-tenant-id);Password=$(sp-greyskull-uks-001-secret);" "$(PBIDataset)" -O -C -P -R -E -V'
     addSpnToEnvironment: true
 
 - task: AzureCLI@2
