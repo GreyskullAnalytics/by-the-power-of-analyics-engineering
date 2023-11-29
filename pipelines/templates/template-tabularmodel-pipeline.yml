@@ -2,17 +2,14 @@ parameters:
   PBIDataset: '$(PBIDataset)'
   PBIWorkspace: '$(PBIWorkspace)'
   ServiceConnection: '$(ServiceConnection)'
-  Environment: '$(Environment)'
-  DbxCatalog: '$(DbxCatalog)'
-  DbxServer: '$(DbxServer)'
-  DbxEndpoint: '$(DbxEndpoint)'
+  
 steps:
 - checkout: self
 - task: AzureKeyVault@2
   inputs:
     azureSubscription: $(ServiceConnection)
-    KeyVaultName: 'kv-aggreg8-dev'
-    SecretsFilter: 'Aggreg8-PBI-Tenant-ID, Aggreg8-PBI-Admin-API-App-ID, Aggreg8-PBI-Admin-API-Secret'
+    KeyVaultName: 'kv-greyskull-uks-001'
+    SecretsFilter: 'sp-greyskull-uks-001-tenant-id, sp-greyskull-uks-001-client-id, sp-greyskull-uks-001-secret'
     RunAsPreJob: false
 
 - script: |
@@ -27,60 +24,7 @@ steps:
     scriptType: batch
     scriptLocation: inlineScript
     inlineScript: |
-     echo Model.Expressions["_DbxServer"].Expression = "\"$(DbxServer)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]"; Model.Expressions["_DbxEndpoint"].Expression = "\"$(DbxEndpoint)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]"; Model.Expressions["_DbxCatalog"].Expression = "\"$(DbxCatalog)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]"; Model.Expressions["_BuildNumber"].Expression = "\"$(Build.BuildNumber)\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"; Model.Expressions["_Environment"].Expression = "\"$(Environment)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]";> SetDeploymentParameters.cs
-     $(Build.SourcesDirectory)\powerbi\tabulareditor\TabularEditor.exe "$(Build.SourcesDirectory)\powerbi\models\$(PBIDataset)\Database.json" -S SetDeploymentParameters.cs -D "Data Source=$(PBIWorkspace);User ID=app:$(Aggreg8-PBI-Admin-API-App-ID)@$(Aggreg8-PBI-Tenant-ID);Password=$(Aggreg8-PBI-Admin-API-Secret);" "$(PBIDataset)" -O -C -P -R -E -V'
-     
-    addSpnToEnvironment: true
-
-- task: AzureCLI@2
-  displayName: 'Refresh Dataset'
-  inputs:
-    azureSubscription: $(ServiceConnection)
-    scriptType: ps
-    scriptLocation: inlineScript
-    inlineScript: |
-     $XMLAEndpoint = "$(PBIWorkspace)"
-     $DatasetName = "$(PBIDataset)"
-     
-     Write-Output "Install MicrosoftPowerBIMgmt Module"
-     #Install Powershell Module if Needed
-         if (Get-Module -ListAvailable -Name "MicrosoftPowerBIMgmt") {
-             Write-Host "MicrosoftPowerBIMgmt already installed"
-         } else {
-             Install-Module -Name MicrosoftPowerBIMgmt -Scope CurrentUser -AllowClobber -Force
-         }
-     
-     Write-Output "Log In to Power BI Service"
-     $applicationId = "$(Aggreg8-PBI-Admin-API-App-ID)";
-     $securePassword = "$(Aggreg8-PBI-Admin-API-Secret)" | ConvertTo-SecureString -AsPlainText -Force
-     $credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $applicationId, $securePassword
-     Connect-PowerBIServiceAccount -ServicePrincipal -Credential $credential -TenantId "$(Aggreg8-PBI-Tenant-ID)"
-     
-     Write-Output "Get Workspace Name from the XMLA Endpoint"
-     #Get Workspace Name from the XMLA Endpoint
-     $WorkspaceName = ($XMLAEndpoint).Substring($XMLAEndpoint.Length - ($XMLAEndpoint[-1..-$XMLAEndpoint.Length] -join '').IndexOf("/"), ($XMLAEndpoint[-1..-$XMLAEndpoint.Length] -join '').IndexOf("/"))
-     Write-Output "$WorkspaceName"
-
-     Write-Output "Get Workspace ID from Workspace Name"
-     #Get Workspace ID from Workspace Name
-     $WorkspaceID = Get-PowerBIWorkspace -Name $WorkspaceName | `
-         Where {$_.Type -eq "Workspace"} | ForEach {$_.Id}
-     
-     Write-Output "Get Dataset ID based on Workspace ID and Dataset Name"
-     #Get Dataset ID based on Workspace ID and Dataset Name
-     $DatasetID = Get-PowerBIDataset -WorkspaceId $WorkspaceID | ` 
-         Where {$_.Name -eq $DatasetName} | ForEach {$_.Id}
-     
-     #Build refresh URL
-     
-     $RefreshDSURL = 'groups/' + $WorkspaceID + '/datasets/' + $DatasetID + '/refreshes'
-     
-     #Execute refresh with mail on failure
-     
-     $MailFailureNotify = @{"notifyOption"="MailOnFailure"}
-     
-     Write-Output "Submit Refresh"
-     Invoke-PowerBIRestMethod -Url $RefreshDSURL -Method Post -Body $MailFailureNotify
+     $(Build.SourcesDirectory)\powerbi\tabulareditor\TabularEditor.exe "$(Build.SourcesDirectory)\powerbi\models\$(PBIDataset)\Database.json" -S SetDeploymentParameters.cs -D "Data Source=$(PBIWorkspace);User ID=app:$(sp-greyskull-uks-001-client-id)@$(sp-greyskull-uks-001-tenant-id);Password=$(sp-greyskull-uks-001-secret);" "$(PBIDataset)" -O -C -P -R -E -V'
     addSpnToEnvironment: true
 
 - task: AzureCLI@2
@@ -90,8 +34,8 @@ steps:
     scriptType: batch
     scriptLocation: inlineScript
     inlineScript: |
-     echo Model.Expressions["_DataSet"].Expression = "\"$(PBIDataset)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]"; Model.Expressions["_XMLAEndpoint"].Expression = "\"$(PBIWorkspace)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]"; Model.Expressions["_BuildNumber"].Expression = "\"$(Build.BuildNumber)\" meta [IsParameterQuery=true, Type=\"Text\", IsParameterQueryRequired=true]"; Model.Expressions["_Environment"].Expression = "\"$(Environment)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]";> SetDeploymentParameters.cs
-     $(Build.SourcesDirectory)\powerbi\tabulareditor\TabularEditor.exe "$(Build.SourcesDirectory)\powerbi\models\datadictionary\Database.json" -S SetDeploymentParameters.cs -D "Data Source=$(PBIWorkspace);User ID=app:$(Aggreg8-PBI-Admin-API-App-ID)@$(Aggreg8-PBI-Tenant-ID);Password=$(Aggreg8-PBI-Admin-API-Secret);" "$(PBIDataset) Data Dictionary" -O -C -P -R -E -V'
+     echo Model.Expressions["_DataSet"].Expression = "\"$(PBIDataset)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]"; Model.Expressions["_XMLAEndpoint"].Expression = "\"$(PBIWorkspace)\" meta [IsParameterQuery=true, Type=\"Any\", IsParameterQueryRequired=true]";> SetDeploymentParameters.cs
+     $(Build.SourcesDirectory)\powerbi\tabulareditor\TabularEditor.exe "$(Build.SourcesDirectory)\powerbi\models\datadictionary\Database.json" -S SetDeploymentParameters.cs -D "Data Source=$(PBIWorkspace);User ID=app:$(sp-greyskull-uks-001-client-id)@$(sp-greyskull-uks-001-tenant-id);Password=$(sp-greyskull-uks-001-secret);" "$(PBIDataset) Data Dictionary" -O -C -P -R -E -V'
 
     addSpnToEnvironment: true
 
@@ -114,10 +58,10 @@ steps:
          }
      
      Write-Output "Log In to Power BI Service"
-     $applicationId = "$(Aggreg8-PBI-Admin-API-App-ID)";
-     $securePassword = "$(Aggreg8-PBI-Admin-API-Secret)" | ConvertTo-SecureString -AsPlainText -Force
+     $applicationId = "$(sp-greyskull-uks-001-client-id)";
+     $securePassword = "$(sp-greyskull-uks-001-secret)" | ConvertTo-SecureString -AsPlainText -Force
      $credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $applicationId, $securePassword
-     Connect-PowerBIServiceAccount -ServicePrincipal -Credential $credential -TenantId "$(Aggreg8-PBI-Tenant-ID)"
+     Connect-PowerBIServiceAccount -ServicePrincipal -Credential $credential -TenantId "$(sp-greyskull-uks-001-tenant-id)"
      
      Write-Output "Get Workspace Name from the XMLA Endpoint"
      #Get Workspace Name from the XMLA Endpoint

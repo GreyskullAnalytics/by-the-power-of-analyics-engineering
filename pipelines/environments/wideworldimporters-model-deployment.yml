@@ -1,0 +1,34 @@
+trigger:
+  branches:
+    include:
+  # Update which branch will trigger the pipeline  
+    - main                                                                
+  paths:
+    include:
+  # Change the path to include the dataset name
+    - powerbi/models/WideWorldImporters/*                                     
+pool:
+  # Set build agent 
+  name: Azure Pipelines
+  vmImage: 'windows-latest'                                             
+                                                     
+# local variables - set these here
+variables:
+    # Change the value to include the dataset name
+  - name: PBIDataset
+    value: 'pbi_sm_WideWorldImporters'
+    # XMLA Endpoint for the workspace (make sure to replace %20 with spaces)                                                   
+  - name: PBIWorkspace
+    value: 'powerbi://api.powerbi.com/v1.0/myorg/By the Power of Analytics Engineering' 
+    # Service Connection for using Service Principal     
+  - name: ServiceConnection
+    value: 'sp-greyskull-uks-001'                                 
+
+steps:
+  - template: ../templates/template-tabularmodel-pipeline.yml
+    parameters:
+      PBIDataset: $(PBIDataset)
+      PBIWorkspace: $(PBIWorkspace)
+      ServiceConnection: $(ServiceConnection)
+
+  
