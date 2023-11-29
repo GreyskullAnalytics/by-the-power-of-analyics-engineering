@@ -1,0 +1,7 @@
+{
+  "name": "Website URL",
+  "dataType": "string",
+  "sourceColumn": "WebsiteURL",
+  "lineageTag": "a444c3b8-0b10-406b-8ed8-79d39bb27935",
+  "summarizeBy": "none"
+}

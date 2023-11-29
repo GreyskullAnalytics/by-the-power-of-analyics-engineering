@@ -1,0 +1,7 @@
+{
+  "name": "Day Of Year",
+  "dataType": "int64",
+  "sourceColumn": "DayOfYear",
+  "lineageTag": "6cf806c1-0096-4c56-a259-5b39b7393464",
+  "summarizeBy": "none"
+}

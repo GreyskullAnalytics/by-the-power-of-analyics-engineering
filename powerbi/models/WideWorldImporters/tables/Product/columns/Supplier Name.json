@@ -1,0 +1,7 @@
+{
+  "name": "Supplier Name",
+  "dataType": "string",
+  "sourceColumn": "SupplierName",
+  "lineageTag": "67039f30-4d88-4f57-bbed-a5a97eb90c3a",
+  "summarizeBy": "none"
+}

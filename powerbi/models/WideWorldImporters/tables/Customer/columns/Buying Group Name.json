@@ -1,0 +1,7 @@
+{
+  "name": "Buying Group Name",
+  "dataType": "string",
+  "sourceColumn": "BuyingGroupName",
+  "lineageTag": "8b446667-616a-4cb5-ab20-6837f68e55f2",
+  "summarizeBy": "none"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Date Key",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "DateKey",
+  "isAvailableInMdx": false,
+  "lineageTag": "7e6ecc88-3e77-4150-bedd-59b1f9258011",
+  "summarizeBy": "none"
+}

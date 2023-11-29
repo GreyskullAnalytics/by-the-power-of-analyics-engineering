@@ -1,0 +1,9 @@
+{
+  "name": "Quantity",
+  "dataType": "int64",
+  "isHidden": true,
+  "sourceColumn": "Quantity",
+  "isAvailableInMdx": false,
+  "lineageTag": "e0514ead-dd6b-432b-ba7e-698082afb778",
+  "summarizeBy": "none"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Customer",
+  "lineageTag": "98ec3677-4913-4e96-b266-47d829fce3c6",
+  "extendedProperties": [
+    {
+      "name": "SourceTable",
+      "value": "dim_customer"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

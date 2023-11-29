@@ -1,0 +1,7 @@
+{
+  "name": "Customer Name",
+  "dataType": "string",
+  "sourceColumn": "CustomerName",
+  "lineageTag": "35f1c324-d60b-44e9-a136-0613d788b8d7",
+  "summarizeBy": "none"
+}
