@@ -1,7 +1,0 @@
-{
-  "name": "Customer Category Name",
-  "dataType": "string",
-  "sourceColumn": "CustomerCategoryName",
-  "lineageTag": "23c5af62-b5f9-44e2-b124-9750ad52ddd6",
-  "summarizeBy": "none"
-}

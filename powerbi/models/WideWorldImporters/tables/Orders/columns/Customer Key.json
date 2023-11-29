@@ -1,9 +1,0 @@
-{
-  "name": "Customer Key",
-  "dataType": "int64",
-  "isHidden": true,
-  "sourceColumn": "CustomerKey",
-  "isAvailableInMdx": false,
-  "lineageTag": "092fb2eb-585b-41c7-ba14-4cd054be4ad2",
-  "summarizeBy": "none"
-}

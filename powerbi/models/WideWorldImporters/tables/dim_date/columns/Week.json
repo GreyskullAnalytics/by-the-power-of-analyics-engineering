@@ -1,0 +1,6 @@
+{
+  "name": "Week",
+  "dataType": "int64",
+  "sourceColumn": "Week",
+  "lineageTag": "016eeb9e-a8c3-400a-87e0-bdc90cb5cfc3"
+}

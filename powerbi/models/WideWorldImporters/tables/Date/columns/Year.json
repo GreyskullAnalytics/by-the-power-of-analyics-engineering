@@ -1,7 +1,0 @@
-{
-  "name": "Year",
-  "dataType": "int64",
-  "sourceColumn": "Year",
-  "lineageTag": "ab884278-c696-4725-a882-3136f26e3d47",
-  "summarizeBy": "none"
-}

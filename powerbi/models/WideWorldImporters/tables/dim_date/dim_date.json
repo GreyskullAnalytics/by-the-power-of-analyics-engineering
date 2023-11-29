@@ -1,0 +1,10 @@
+{
+  "name": "dim_date",
+  "lineageTag": "5626c8f7-7f66-4aff-a9fd-ab5cf289cb4a",
+  "annotations": [
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

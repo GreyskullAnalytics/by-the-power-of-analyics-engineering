@@ -1,7 +1,0 @@
-{
-  "name": "Product Colour",
-  "dataType": "string",
-  "sourceColumn": "ProductColour",
-  "lineageTag": "2e84d093-f4ce-478e-839e-74ebd0857a87",
-  "summarizeBy": "none"
-}

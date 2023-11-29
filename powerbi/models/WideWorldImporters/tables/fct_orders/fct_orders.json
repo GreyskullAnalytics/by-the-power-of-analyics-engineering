@@ -1,0 +1,10 @@
+{
+  "name": "fct_orders",
+  "lineageTag": "7852610a-a3a6-4df0-941b-5c6b4ef53a85",
+  "annotations": [
+    {
+      "name": "TabularEditor_Relationships",
+      "value": "[]"
+    }
+  ]
+}

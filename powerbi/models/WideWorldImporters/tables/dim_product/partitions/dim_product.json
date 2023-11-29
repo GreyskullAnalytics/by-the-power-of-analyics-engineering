@@ -1,0 +1,10 @@
+{
+  "name": "dim_product",
+  "mode": "directLake",
+  "source": {
+    "type": "entity",
+    "entityName": "dim_product",
+    "expressionSource": "DatabaseQuery",
+    "schemaName": "dbt"
+  }
+}
