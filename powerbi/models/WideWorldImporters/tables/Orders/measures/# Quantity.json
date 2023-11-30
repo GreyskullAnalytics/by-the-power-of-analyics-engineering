@@ -1,0 +1,7 @@
+{
+  "name": "# Quantity",
+  "description": "Total Quantity",
+  "expression": "SUM('Orders'[Quantity])",
+  "formatString": "#,##0",
+  "lineageTag": "c7fb5a1f-a942-4216-b005-b59ad03c1a1f"
+}

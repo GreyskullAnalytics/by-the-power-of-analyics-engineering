@@ -1,0 +1,8 @@
+{
+  "name": "Day",
+  "dataType": "int64",
+  "description": "The day of the month",
+  "sourceColumn": "Day",
+  "lineageTag": "2e5ac1e9-4d55-492f-ab64-7c42aac8672b",
+  "summarizeBy": "none"
+}

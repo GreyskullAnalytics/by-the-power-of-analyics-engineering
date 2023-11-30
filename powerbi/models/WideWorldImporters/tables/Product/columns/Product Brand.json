@@ -1,0 +1,8 @@
+{
+  "name": "Product Brand",
+  "dataType": "string",
+  "description": "The brand of the product",
+  "sourceColumn": "ProductBrand",
+  "lineageTag": "cb1a3978-0571-4d2b-b6ea-1b03b8bb5812",
+  "summarizeBy": "none"
+}

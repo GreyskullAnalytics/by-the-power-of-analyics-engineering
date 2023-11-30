@@ -1,0 +1,10 @@
+{
+  "name": "Quantity",
+  "dataType": "int64",
+  "description": "The number of items on the the order line",
+  "isHidden": true,
+  "sourceColumn": "Quantity",
+  "isAvailableInMdx": false,
+  "lineageTag": "e0514ead-dd6b-432b-ba7e-698082afb778",
+  "summarizeBy": "none"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Orders",
+  "description": "Order information at an Order Line granularity",
+  "lineageTag": "7852610a-a3a6-4df0-941b-5c6b4ef53a85",
+  "extendedProperties": [
+    {
+      "name": "SourceTable",
+      "value": "fct_orders"
+    }
+  ],
+  "annotations": [
+    {
+      "name": "TabularEditor_Relationships",
+      "value": [
+        "[",
+        "  {",
+        "    \"fromTable\": \"Orders\",",
+        "    \"fromColumn\": \"Customer Key\",",
+        "    \"toTable\": \"Customer\",",
+        "    \"toColumn\": \"Customer Key\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"Orders\",",
+        "    \"fromColumn\": \"Date Key\",",
+        "    \"toTable\": \"Date\",",
+        "    \"toColumn\": \"Date Key\"",
+        "  },",
+        "  {",
+        "    \"fromTable\": \"Orders\",",
+        "    \"fromColumn\": \"Product Key\",",
+        "    \"toTable\": \"Product\",",
+        "    \"toColumn\": \"Product Key\"",
+        "  }",
+        "]"
+      ]
+    }
+  ]
+}
