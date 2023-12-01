@@ -1,0 +1,7 @@
+{
+  "name": "Quarter",
+  "dataType": "string",
+  "description": "The calendar quarter",
+  "sourceColumn": "Quarter",
+  "lineageTag": "5ccc9f52-9415-4921-ae7f-e2c735671ae9"
+}

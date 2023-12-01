@@ -1,0 +1,7 @@
+{
+  "name": "BuyingGroupName",
+  "dataType": "string",
+  "description": "The buying group that the customer belongs to",
+  "sourceColumn": "BuyingGroupName",
+  "lineageTag": "8b446667-616a-4cb5-ab20-6837f68e55f2"
+}

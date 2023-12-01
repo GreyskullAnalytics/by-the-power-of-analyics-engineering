@@ -1,8 +1,0 @@
-{
-  "name": "ISO Week",
-  "dataType": "int64",
-  "description": "The ISO Week. ISO week's always start on a Monday. Week 1 is the first week that includes Thursday in the new year",
-  "sourceColumn": "ISOWeek",
-  "lineageTag": "8337b900-c503-49b4-afa6-5d3c3cd0f8c0",
-  "summarizeBy": "none"
-}
