@@ -1,0 +1,1 @@
+A repo to accompany the talk "By the Power of Analytics Engineering", demonstrating how you can use dbt, Tabular Editor and Azure Dev Ops pipelines as Analytics Engineering tools with Microsoft Fabric.
