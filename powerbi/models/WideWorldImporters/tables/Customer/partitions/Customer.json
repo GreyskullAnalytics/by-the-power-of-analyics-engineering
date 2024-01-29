@@ -1,0 +1,10 @@
+{
+  "name": "Customer",
+  "mode": "directLake",
+  "source": {
+    "type": "entity",
+    "entityName": "dim_customer",
+    "expressionSource": "DatabaseQuery",
+    "schemaName": "dbt"
+  }
+}

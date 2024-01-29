@@ -1,0 +1,11 @@
+{
+  "name": "Customer Key",
+  "dataType": "int64",
+  "description": "The surrogate key for this table",
+  "isHidden": true,
+  "isKey": true,
+  "sourceColumn": "CustomerKey",
+  "isAvailableInMdx": false,
+  "lineageTag": "032d1ad6-c0cc-431d-a6cc-e92858cf7527",
+  "summarizeBy": "none"
+}

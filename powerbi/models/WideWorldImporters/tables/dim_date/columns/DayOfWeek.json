@@ -1,7 +1,0 @@
-{
-  "name": "DayOfWeek",
-  "dataType": "int64",
-  "description": "The day of the week number, starting with Sunday = 1",
-  "sourceColumn": "DayOfWeek",
-  "lineageTag": "ee06dc4c-e81e-4f2d-b0af-d3768fe63abe"
-}

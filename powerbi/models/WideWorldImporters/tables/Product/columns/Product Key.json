@@ -1,0 +1,11 @@
+{
+  "name": "Product Key",
+  "dataType": "int64",
+  "description": "The surrogate key for this table",
+  "isHidden": true,
+  "isKey": true,
+  "sourceColumn": "ProductKey",
+  "isAvailableInMdx": false,
+  "lineageTag": "cb5f39e5-70e6-47a3-b36a-8369fec061af",
+  "summarizeBy": "none"
+}
