@@ -1,7 +1,0 @@
-{
-  "name": "£ Sales Amount",
-  "description": "Total Sales Amount",
-  "expression": "SUM('Orders'[Sales Amount])",
-  "formatString": "$ #,##0",
-  "lineageTag": "cb7c0961-c122-41cc-9412-b0b5d6aca9f4"
-}

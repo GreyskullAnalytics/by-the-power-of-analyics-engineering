@@ -1,0 +1,10 @@
+{
+  "name": "fct_orders",
+  "mode": "directLake",
+  "source": {
+    "type": "entity",
+    "entityName": "fct_orders",
+    "expressionSource": "DatabaseQuery",
+    "schemaName": "dbt"
+  }
+}

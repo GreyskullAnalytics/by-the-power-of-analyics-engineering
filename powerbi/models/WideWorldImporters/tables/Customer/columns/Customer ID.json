@@ -1,8 +1,0 @@
-{
-  "name": "Customer ID",
-  "dataType": "int64",
-  "description": "The natural key for this table",
-  "sourceColumn": "CustomerID",
-  "lineageTag": "0d438fba-66d3-4b6e-9004-ab8e22829d22",
-  "summarizeBy": "none"
-}
