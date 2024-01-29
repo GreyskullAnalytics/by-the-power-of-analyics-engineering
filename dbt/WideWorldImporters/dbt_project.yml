@@ -29,6 +29,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   wideworldimporters:
     # Config indicated by + and applies to all files under models/example/
-    marts:
+    curated:
       +materialized: table
 
