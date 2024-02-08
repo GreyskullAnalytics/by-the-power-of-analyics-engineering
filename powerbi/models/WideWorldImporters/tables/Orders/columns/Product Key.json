@@ -1,0 +1,10 @@
+{
+  "name": "Product Key",
+  "dataType": "int64",
+  "description": "Foreign Key to the Product Dimension",
+  "isHidden": true,
+  "sourceColumn": "ProductKey",
+  "isAvailableInMdx": false,
+  "lineageTag": "73cb6569-67d8-4d90-b054-56fc63ea6746",
+  "summarizeBy": "none"
+}

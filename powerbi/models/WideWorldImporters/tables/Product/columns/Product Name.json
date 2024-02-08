@@ -1,0 +1,8 @@
+{
+  "name": "Product Name",
+  "dataType": "string",
+  "description": "The name of the product",
+  "sourceColumn": "ProductName",
+  "lineageTag": "4b9d3dbe-375a-49c6-a8e2-ff9a4903ff8a",
+  "summarizeBy": "none"
+}

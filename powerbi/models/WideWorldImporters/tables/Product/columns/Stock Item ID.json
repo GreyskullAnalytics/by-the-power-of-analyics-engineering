@@ -1,0 +1,8 @@
+{
+  "name": "Stock Item ID",
+  "dataType": "int64",
+  "description": "The natural key for this table",
+  "sourceColumn": "StockItemID",
+  "lineageTag": "aafd69dd-e13f-470e-b85b-3421c86993e1",
+  "summarizeBy": "none"
+}
